@@ -1,0 +1,10 @@
+
+Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.
+
+Python was created in the late 1980s, and its implementation was started in December 1989 by Guido van Rossum at CWI in the Netherlands. As a successor to the ABC language, Python was designed to be highly extensible, which allows even the addition of new constructs through its high-level data structures and dynamic typing and binding. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. 
+
+Moreover, Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed. The language has undergone many changes over the years, but the philosophy of Python remains the same - the emphasis on productivity and readability.
+
+Python's popularity has seen a meteoric rise in the past decade, making it one of the most popular programming languages in the world. It is widely used in various domains such as web development, scientific and mathematical computing, artificial intelligence, data analysis, data visualization, etc. Python’s simple, minimalistic approach and its powerful set of libraries have made it a favorite among novices and seasoned developers alike.
