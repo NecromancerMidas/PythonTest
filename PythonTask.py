@@ -16,23 +16,34 @@
 text:str = open("sample_text (1).txt").read()
 print(text)
 
+class WordWithCount:
+  def __init__(self,word,count):
+    self.word = word
+    self.count = count
+  def printthis(self):
+    print(self.word + " " + str(self.count))
+def sortByCount(item):
+  return item.count
 def fileHandling(file:str) :
    split:list = file.split(" ")
    newlist:list = []
-   
+   ignoredWords:list = ["the","and","or","is","at","which","so","but","an","has","as","in","on","it","of","its","to","was"]
    for word in split :
-    newword:str = "".join(char for char in word if char.isalpha() or char.isspace()).casefold()
-    newlist.append(newword)
+    newword:str = "".join(char for char in word if char.isalpha()).casefold()
+    if newword not in ignoredWords and len(newword) > 1:
+      newlist.append(newword)
    split = newlist
 
    uniqueWords:list = list(set(split))
+   AllWords:list = []
    for word in uniqueWords :
-    
-    print(word + " " + str(split.count(word)))
+    AllWords.append(WordWithCount(word,split.count(word)))
     # for item in split : #replace with split.count(word)
     #     if(item == word) :
     #      counter += 1
-    
+   AllWords.sort(key=sortByCount)
+   for index in range(1,10):
+    AllWords[len(AllWords) - index].printthis()
 
 
 
